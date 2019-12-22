@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/EWLogo512.png">
 </head>
 <body>
-    
-    <div id="test"></div>
-    
+    <div id="categories" class="main-box">
+        <ol>
+            <li>Configuration</li>
+        </ol>
+    </div>
+    <div id="content"  class="main-box">
+
+    </div>
     <script src="ajax.js"></script>
     <script>
-            console.log("completado");
+
             ajax("test.txt", "GET", {}, (data) => {
                 
                 document.getElementById("test").innerHTML = data;
