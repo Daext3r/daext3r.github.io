@@ -16,93 +16,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: "Open Sans";
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            height: 100vh;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 80vw;
-            height: 90vh;
-            box-shadow: 0px 0px 229px -77px rgba(0, 0, 0, 0.75);
-            flex-wrap: wrap;
-            margin: 2em;
-        }
-
-        .header {
-            width: 100%;
-            text-align: center;
-        }
-
-        .btn {
-            width: 49%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card-body {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            display: flex;
-            align-items: center;
-        }
-
-        img {
-            display: block;
-        }
-
-        #ew-logo {
-            width: 7em;
-            margin: 0.3em;
-        }
-
-        #hc-logo {
-            margin: 1em;
-            width: 17em;
-        }
-
-        .lang-card {
-            height: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lang-card img {
-            width: 50%;
-        }
-
-        .lang-card .card-text, .lang-card .card-title {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 1em;
-        }
-    </style>
+   
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="row">
         <h4 class="header">Some of my works...</h4>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="economyworld/img/EWLogo512.png" alt="Card image cap" id="ew-logo">
+        <div class="card">
+            <img class="card-img-top img-fluid" src="economyworld/img/EWLogo512.png" alt="Card image cap" id="ew-logo">
             <div class="card-body">
                 <h5 class="card-title">Economy World</h5>
                 <p class="card-text">Gamemode made for <a href="https://rage.mp">RageMP</a> in C#.</p>
@@ -111,9 +33,10 @@
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top"
-                src="https://raw.githubusercontent.com/Daext3r/HealthCare/master/assets/img/logo.png" alt="Card image cap" id="hc-logo">
+        <div class="card">
+            <img class="card-img-top img-fluid"
+                src="https://raw.githubusercontent.com/Daext3r/HealthCare/master/assets/img/logo.png"
+                alt="Card image cap" id="hc-logo">
             <div class="card-body">
                 <h5 class="card-title">HealthCare</h5>
                 <p class="card-text">Web application to control a health system, such as primary attention and
@@ -123,40 +46,62 @@
         </div>
     </div>
 
+    <div class="separator"></div>
+
     <div class="row">
         <h4 class="header">What languages do I know?</h4>
-        <div class="card lang-card" style="width: 18rem;">
-            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Csharp_Logo.png/245px-Csharp_Logo.png" alt="Card image cap">
+        <div class="card lang-card">
+            <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Csharp_Logo.png/245px-Csharp_Logo.png"
+                alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">C#</h5>
-              <p class="card-text">Basic level</p>
+                <h5 class="card-title">C#</h5>
+                <p class="card-text">Basic level</p>
             </div>
-          </div>
+        </div>
 
-          <div class="card lang-card" style="width: 18rem;">
+        <div class="card lang-card">
             <img class="card-img-top" src="https://i.blogs.es/8d2420/650_1000_java/1366_2000.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Java</h5>
-              <p class="card-text">Medium level</p>
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">Medium level</p>
             </div>
-          </div>
+        </div>
 
-          <div class="card lang-card" style="width: 18rem;">
-            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="Card image cap" style="width: 40%">
+        <div class="card lang-card">
+            <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                alt="Card image cap" style="width: 40%; margin-top: 2em;">
             <div class="card-body">
-              <h5 class="card-title">JavaScript</h5>
-              <p class="card-text">Medium-High level</p>
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">Medium-High level</p>
             </div>
-          </div>
+        </div>
 
-          <div class="card lang-card" style="width: 18rem;">
-            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="Card image cap" style="margin-top: 2.0em; margin-bottom: 2em;" >
+        <div class="card lang-card">
+            <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png"
+                alt="Card image cap" style="margin-top: 2.0em; margin-bottom: 2em;">
             <div class="card-body">
-              <h5 class="card-title">PHP</h5>
-              <p class="card-text">Medium-High level</p>
+                <h5 class="card-title">PHP</h5>
+                <p class="card-text">Medium-High level</p>
             </div>
-          </div>
-          
+        </div>
+    </div>
+
+    <div class="separator"></div>
+    
+    <div class="row">
+        <h4 class="d-block w-100 text-center">What do I want to do in a future?</h4>
+        
+        <div class="card lang-card">
+           
+            <div class="card-body">
+                <h5 class="card-title">Unnamed project</h5>
+                <p class="card-text">Customizable social network. Using an admin panel you'll be able to enable or disable features. You'll need to download it and host it yourself.</p>
+            </div>
+        </div>
+
     </div>
 </body>
 
