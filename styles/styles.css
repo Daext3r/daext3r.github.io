@@ -37,6 +37,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #333;
+    border: 0;
 }
 
 .card-body {
@@ -51,8 +53,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #4b4b4b;
-    box-shadow: 2px 2px 20px -12px rgb(139, 139, 139);
-    
+    border-radius: 0 !important;
 }
 
 img {
