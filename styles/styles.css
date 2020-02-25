@@ -107,4 +107,7 @@ img {
     .card {
         width: 100% !important;
     }
+    #hc-logo {
+        width: 90% !important;
+    }
 }
