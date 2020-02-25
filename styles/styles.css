@@ -70,11 +70,10 @@ img {
     width: 17em;
 }
 
-.lang-card {
+.lang-card, .project-card {
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .lang-card img {
@@ -82,7 +81,9 @@ img {
 }
 
 .lang-card .card-text,
-.lang-card .card-title {
+.lang-card .card-title,
+.project-card .card-text,
+.project-card .card-title {
     width: 100%;
     text-align: center;
     margin-bottom: 1em;
