@@ -1,172 +1,220 @@
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans";
+   box-sizing: border-box;
+   font-family: "Segoe UI";
+}
+
+html {
+   scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    color: white;
-    font-weight: lighter;
-    background-color: #212121;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 100vh;
+   color: white;
+   font-weight: lighter;
+   background-color: #212121;
+}
+
+body::-webkit-scrollbar {
+   display: none;
 }
 
 .row {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80vw;
-    border-radius: 0.5em;
-    flex-wrap: wrap;
-    margin: 2em;
-    padding: 2em;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 80vw;
+   border-radius: 0.5em;
+   flex-wrap: wrap;
+   margin: 2em;
+   padding: 2em;
 }
 
 .header {
-    width: 100%;
-    text-align: center;
+   width: 100%;
+   text-align: center;
 }
 
 .btn {
-    width: 49%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #333;
-    border: 0;
+   width: 49%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: #333;
+   border: 0;
 }
 
 .card-body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .card {
-    width: 30%;
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
-    background-color: #4b4b4b;
-    border-radius: 0 !important;
+   width: 30%;
+   margin-top: 1em;
+   display: flex;
+   align-items: center;
+   background-color: #4b4b4b;
+   border-radius: 0 !important;
 }
 
 img {
-    display: block;
+   display: block;
 }
 
 #ew-logo {
-    width: 7em;
-    margin: 0.3em;
+   width: 7em;
+   margin: 0.3em;
 }
 
 #hc-logo {
-    margin: 1em;
-    width: 17em;
+   margin: 1em;
+   width: 17em;
 }
 
 .lang-card, .project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .lang-card img {
-    width: 50%;
+   width: 50%;
 }
 
 .work-card {
-    height: 300px;
+   height: 300px;
+   font-size: 14px;
 }
 
 .lang-card .card-text, .lang-card .card-title, .project-card .card-text, .project-card .card-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1em;
+   width: 100%;
+   text-align: center;
+   margin-bottom: 1em;
 }
 
 .lang-card {
-    height: 300px;
+   height: 300px;
 }
 
 .project-card {
-    height: 200px;
+   height: 200px;
 }
 
-
 .contact-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 150px;
 }
 
 .contact-card h5 {
-    width: 100%;
+   width: 100%;
 }
 
 .contact-card small {
-    width: 100%;
+   width: 100%;
 }
 
-.contact-card .card-body,
-.contact-card .card-text {
-    width: 100%;
-    text-align: center;
+.contact-card .card-body, .contact-card .card-text {
+   width: 100%;
+   text-align: center;
 }
+
 .separator {
-    width: 80%;
-    border-top: 1px solid rgb(82, 82, 82);
-    height: 1em;
+   width: 80%;
+   border-top: 1px solid rgb(82, 82, 82);
+   height: 1em;
 }
 
+.home {
+   height: 95vh;
+   width: 100vw;
+   border-radius: 0!important;
+   margin-top: 0.5em;
+   position: relative;
+}
+
+.background-blur {
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   filter: blur(3px);
+}
+
+.content {
+   font-weight: 250;
+   font-size: 3em;
+   background-color: rgba(0, 0, 0, 0.300);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-content: center!important;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.cursor {
+   display: inline-block;
+   vertical-align: baseline;
+}
+
+.opacity {
+   opacity: 0;
+}
+
+.sections {
+   margin-top: 2em;
+   font-size: 0.7em;
+}
 
 @media only screen and (max-width: 1420px) {
-    .contact-card {
-        width: 40%;
-    }
+   .contact-card {
+      width: 40%;
+   }
 }
 
 @media only screen and (max-width: 1200px) {
-    .card {
-        width: 60% !important;
-        margin-top: 1em;
-    }
+   .card {
+      width: 60% !important;
+      margin-top: 1em;
+   }
 }
 
 @media only screen and (max-width: 650px) {
-    .card {
-        width: 100% !important;
-    }
-
-    #hc-logo {
-        width: 90% !important;
-    }
+   .card {
+      width: 100% !important;
+   }
+   #hc-logo {
+      width: 90% !important;
+   }
 }
 
 @media only screen and (max-width: 470px) {
-    .work-card {
-        height: 400px;
-    }
-    .btn {
-        width: 90%;
-        margin-top: 1em;
-    }
+   .work-card {
+      height: 400px;
+   }
+   .btn {
+      width: 90%;
+      margin-top: 1em;
+   }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 440px) {
-    .project-card {
-        height: 350px;
-    }
+   .project-card {
+      height: 350px;
+   }
 }
 
-
 @media only screen and (min-width: 1201px) and (max-width: 1399px) {
-    .work-card {
-        height: 350px;
-    }
+   .work-card {
+      height: 350px;
+   }
 }
