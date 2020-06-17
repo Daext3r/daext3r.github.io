@@ -1,8 +1,5 @@
 
 window.onload = async () => {
-   //REDIRECT TO ORGANIZATION REPO
-   window.location = "https://dexsoftcoding.github.io";
-
    //when the dom is loaded
    const phrases = ["Web development & more!", "Don't stop learning!", "Contact below!"];
 
